@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from "react-router";
+import Button from "react-bootstrap/Button";
 
 const Category = () => {
   const { slug } = useParams();
@@ -11,9 +12,9 @@ const Category = () => {
   return (
     <>
       <h2>Détails de la catégorie : {slug}</h2>
-      <button onClick={handleClick} className="btn btn-primary mt-3">
+      <Button variant="primary" onClick={handleClick}>
         Retour à la page d'accueil
-      </button>
+      </Button>
     </>
   );
 };
