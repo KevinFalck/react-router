@@ -4,7 +4,7 @@ const Category = () => {
   const { slug } = useParams();
   return (
     <>
-      <h2 className="my-3">Détails de la catégorie : {slug}</h2>
+      <h2>Détails de la catégorie : {slug}</h2>
     </>
   );
 };
