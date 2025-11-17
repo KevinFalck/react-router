@@ -3,24 +3,23 @@ import { Link } from "react-router";
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container fluid>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+    <header>
+      <Navbar bg="light">
+        <Container fluid className="justify-content-end">
           <Nav>
             <Nav.Link as={Link} to="/">
               Accueil
             </Nav.Link>
-            <Nav.Link as={Link} to="/categorie/1">
+            <Nav.Link as={Link} to="/categorie/vetements">
               Vêtements
             </Nav.Link>
-            <Nav.Link as={Link} to="/categorie/2">
+            <Nav.Link as={Link} to="/categorie/chaussures">
               Chaussures
             </Nav.Link>
           </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        </Container>
+      </Navbar>
+    </header>
   );
 }
 export default Header;

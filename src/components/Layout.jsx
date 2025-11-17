@@ -7,11 +7,9 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <main className="d-flex align-items-center justify-content-center" style={{ minHeight: "calc(100vh - 200px)" }}>
-        <Container>
-          <Outlet />
-        </Container>
-      </main>
+      <Container as="main" className="d-flex align-items-center">
+        <Outlet />
+      </Container>
       <Footer />
     </>
   );

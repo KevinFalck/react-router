@@ -9,7 +9,7 @@ function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
-        <Route path="categorie/:id" element={<Category />} />
+        <Route path="categorie/:slug" element={<Category />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
