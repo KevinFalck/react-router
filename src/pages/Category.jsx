@@ -1,11 +1,11 @@
 import { useParams } from "react-router";
 
-const BlogDetail = () => {
+const CategoryDetail = () => {
   const { id } = useParams();
   return (
     <div>
-      <h2>Détails du blog avec l'ID : {id}</h2>
+      <h2>Détails de la catégorie avec l'ID : {id}</h2>
     </div>
   );
 };
-export default BlogDetail;
+export default CategoryDetail;
