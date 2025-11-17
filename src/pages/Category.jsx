@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 
-const CategoryDetail = () => {
+const Category = () => {
   const { id } = useParams();
   return (
     <div>
@@ -9,4 +9,4 @@ const CategoryDetail = () => {
   );
 };
 
-export default CategoryDetail;
+export default Category;
