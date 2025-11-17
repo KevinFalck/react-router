@@ -1,24 +1,25 @@
-import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router";
 
 function Header() {
   return (
-    <header>
-      <Navbar bg="light">
-        <Container fluid className="justify-content-end">
-          <Nav>
-            <Nav.Link as={Link} to="/">
-              Accueil
-            </Nav.Link>
-            <Nav.Link as={Link} to="/categorie/vetements">
-              Vêtements
-            </Nav.Link>
-            <Nav.Link as={Link} to="/categorie/chaussures">
-              Chaussures
-            </Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+    <header className="bg-light p-3">
+      <nav className="d-flex justify-content-end">
+        <Link to="/" className="text-decoration-none text-dark me-3">
+          Accueil
+        </Link>
+        <Link
+          to="/categorie/vetements"
+          className="text-decoration-none text-dark me-3"
+        >
+          Vêtements
+        </Link>
+        <Link
+          to="/categorie/chaussures"
+          className="text-decoration-none text-dark"
+        >
+          Chaussures
+        </Link>
+      </nav>
     </header>
   );
 }
